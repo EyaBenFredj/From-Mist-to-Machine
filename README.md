@@ -45,7 +45,7 @@ Cette application vous permet de :
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/votre-utilisateur/votre-repo.git
+git clone https://github.com/EyaBenFredj/From-Mist-to-Machine.git
 cd votre-repo
 ```
 
