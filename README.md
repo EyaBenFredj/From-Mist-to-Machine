@@ -23,7 +23,6 @@ Ce projet permet de :
 
 ### 🔹 Interface principale
 
-> *(Ajoutez ici une capture d'écran de l'interface Streamlit)*
 
 ![image](https://github.com/user-attachments/assets/766ef6b1-428b-463f-a154-f1fb439c65ff)
 
@@ -150,16 +149,4 @@ Q,a->Q
 
 ---
 
-# 📸 Où ajouter tes captures d'écran ?
 
-| Section | Image Suggestée |
-|:--------|:----------------|
-| Interface principale | Page d'accueil de l'app Streamlit |
-| Génération automates | Les graphes générés (ε-NFA + DFA) affichés |
-| Test de chaînes | Résultat d'une chaîne acceptée ou rejetée |
-
-Tu peux remplacer les `PLACEHOLDER_...png` par tes propres images :
-
-```markdown
-![Interface principale](images/interface.png)
-```
