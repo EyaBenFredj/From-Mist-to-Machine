@@ -1,5 +1,4 @@
 
----
 
 ```markdown
 # 🚀 Générateur d'Automates : De l'ε-NFA au DFA
