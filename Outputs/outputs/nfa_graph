@@ -1,0 +1,12 @@
+digraph {
+	rankdir=LR
+	C [color=lightgrey shape=doublecircle style=filled]
+	B [shape=circle]
+	A [shape=circle]
+	"" [shape=none]
+	"" -> A
+	A -> B [label="ε" color=red fontcolor=red]
+	B -> B [label=a]
+	B -> C [label=a]
+	C -> C [label=b]
+}
