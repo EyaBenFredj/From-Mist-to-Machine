@@ -23,25 +23,20 @@ Cette application vous permet de :
 
 ---
 
-## 📸 Aperçu
+##  Aperçu
 
 ### Interface de création d'automate :
 
-> *(Ajoutez une capture d'écran ici)*
-
-![Interface principale](images/interface.png)
+![image](https://github.com/user-attachments/assets/7d70f241-105e-4b4b-8dcf-9ddd0375f8eb)
 
 ### Visualisation des graphes générés :
+![image](https://github.com/user-attachments/assets/83fa8b15-30a1-44f5-8831-fe8b8a9df08d)
 
-> *(Ajoutez une capture d'écran ici)*
-
-![Génération d'automates](images/automates.png)
 
 ### Test d'une chaîne sur le DFA :
+![image](https://github.com/user-attachments/assets/db3ad0c9-3c93-448e-9b8e-4f50e9b632bd)
+![image](https://github.com/user-attachments/assets/96d609d6-77f8-447a-bb53-9c64322bfcec)
 
-> *(Ajoutez une capture d'écran ici)*
-
-![Test de chaînes](images/test_string.png)
 
 ---
 
