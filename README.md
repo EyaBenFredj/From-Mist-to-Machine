@@ -46,7 +46,7 @@ Cette application vous permet de :
 
 ```bash
 git clone https://github.com/EyaBenFredj/From-Mist-to-Machine.git
-cd votre-repo
+cd From-Mist-to-Machine
 ```
 
 ### 2. Créer un environnement virtuel
