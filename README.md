@@ -1,6 +1,5 @@
 
 
-```markdown
 # 🚀 Générateur d'Automates : De l'ε-NFA au DFA
 
 Bienvenue dans ce projet interactif de génération et de visualisation d'automates finis !  
