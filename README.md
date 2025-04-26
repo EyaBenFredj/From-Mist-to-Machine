@@ -1,46 +1,53 @@
 
+---
+
+```markdown
 # 🚀 Générateur d'Automates : De l'ε-NFA au DFA
 
-Bienvenue dans ce projet de génération d'automates finis !  
-Ce projet permet de :
-- Créer un **ε-NFA** (Automate Fini Non Déterministe avec transitions ε)
-- Le convertir automatiquement en **DFA** (Automate Fini Déterministe)
-- Visualiser les graphes générés
-- Tester si une chaîne est acceptée par le DFA
+Bienvenue dans ce projet interactif de génération et de visualisation d'automates finis !  
+Cette application vous permet de :
+- Construire un **ε-NFA** (automate non déterministe avec transitions ε)
+- Le convertir automatiquement en **DFA** (automate déterministe)
+- Visualiser graphiquement les deux automates
+- Tester des chaînes de caractères sur le DFA
+- Télécharger les graphes générés
 
 ---
 
-## ✨ Fonctionnalités
+## ✨ Fonctionnalités principales
 
-- **Création d'automates** à partir d'une interface utilisateur simple.
-- **Visualisation graphique** des ε-NFA et DFA grâce à Graphviz.
-- **Test interactif** de chaînes pour vérifier leur acceptation par le DFA.
-- **Interface Web** conviviale développée avec Streamlit.
-
----
-
-## 🖥️ Démo rapide
-
-### 🔹 Interface principale
-
-
-![image](https://github.com/user-attachments/assets/766ef6b1-428b-463f-a154-f1fb439c65ff)
-
-### 🔹 Exemple de génération d'un automate
-
-> *(Ajoutez ici une capture d'écran montrant un ε-NFA et un DFA généré)*
-
-![Génération automates](PLACEHOLDER_AUTOMATE.png)
-
-### 🔹 Test de chaînes
-
-> *(Ajoutez ici une capture d'écran montrant le test d'une chaîne acceptée ou rejetée)*
-
-![Test de chaînes](PLACEHOLDER_TEST.png)
+- 🎯 Interface Web simple et intuitive avec Streamlit.
+- 🧠 Conversion automatique d'un ε-NFA en DFA.
+- 🖼️ Visualisation des graphes avec Graphviz.
+- 🧪 Test interactif de chaînes sur le DFA.
+- 📥 Boutons pour télécharger les graphes générés (PNG).
+- 🧹 Bouton pour réinitialiser les champs facilement.
 
 ---
 
-## 🔧 Installation
+## 📸 Aperçu
+
+### Interface de création d'automate :
+
+> *(Ajoutez une capture d'écran ici)*
+
+![Interface principale](images/interface.png)
+
+### Visualisation des graphes générés :
+
+> *(Ajoutez une capture d'écran ici)*
+
+![Génération d'automates](images/automates.png)
+
+### Test d'une chaîne sur le DFA :
+
+> *(Ajoutez une capture d'écran ici)*
+
+![Test de chaînes](images/test_string.png)
+
+---
+
+## 🔧 Installation rapide
 
 ### 1. Cloner le projet
 
@@ -53,14 +60,13 @@ cd votre-repo
 
 ```bash
 python -m venv .venv
-# Puis activer l'environnement :
-# Sous Windows :
+# Windows
 .venv\Scripts\activate
-# Sous Linux/Mac :
+# Linux/Mac
 source .venv/bin/activate
 ```
 
-### 3. Installer les dépendances
+### 3. Installer toutes les dépendances
 
 ```bash
 pip install -r requirements.txt
@@ -73,8 +79,9 @@ pip install -r requirements.txt
 - `streamlit`
 - `graphviz`
 - `networkx`
+- `pillow` (PIL)
 
-*(Graphviz doit également être installé sur votre système !)*
+*(Pensez aussi à installer Graphviz sur votre machine pour la génération des graphes.)*
 
 ---
 
@@ -84,7 +91,8 @@ pip install -r requirements.txt
 streamlit run streamlit_app.py
 ```
 
-Puis ouvrez votre navigateur sur [http://localhost:8501](http://localhost:8501).
+Puis ouvrez votre navigateur sur :  
+👉 [http://localhost:8501](http://localhost:8501)
 
 ---
 
@@ -92,31 +100,29 @@ Puis ouvrez votre navigateur sur [http://localhost:8501](http://localhost:8501).
 
 ```
 From-Mist-to-Machine/
-├── main.py               # Script principal
-├── nfa.py                 # Classe pour l'ε-NFA
-├── dfa.py                 # Classe pour le DFA
-├── visualize.py           # Fonctions pour dessiner les automates
-├── streamlit_app.py       # Application Web Streamlit
-├── outputs/               # Dossier des graphes générés (.png)
-├── tests/                 # Tests unitaires (facultatif)
-├── README.md              # Présentation du projet (ce fichier)
-└── requirements.txt       # Liste des dépendances Python
+├── .streamlit/
+│   └── config.toml         # Désactive les warnings Streamlit
+├── outputs/                # Graphes générés (.png)
+├── nfa.py                  # Classe ε-NFA
+├── dfa.py                  # Classe DFA
+├── visualize.py            # Outils de visualisation Graphviz
+├── requirements.txt        # Dépendances Python
+├── streamlit_app.py         # Application Web principale
+└── README.md                # Ce fichier !
 ```
 
 ---
 
 ## 🧠 Concepts abordés
 
-- **Automates finis non déterministes (NFA)** avec transitions ε.
-- **Déterminisation** : conversion automatique vers DFA.
-- **Visualisation de graphes d'états**.
-- **Interaction utilisateur Web**.
+- **Automates Finis Non Déterministes (ε-NFA)**.
+- **Déterminisation** : conversion vers DFA.
+- **Graphes d'états** : visualisation via Graphviz.
+- **Interaction utilisateur Web** avec Streamlit.
 
 ---
 
-## 📌 Exemples
-
-### Exemple de transitions entrées :
+## 📌 Exemple de transitions entrées :
 
 ```
 Q0,a->1
@@ -128,7 +134,8 @@ Q,b->Q
 Q,a->Q
 ```
 
-### Exemple de chaînes à tester :
+## 📋 Exemple de chaînes testées :
+
 | Chaîne | Résultat |
 |:-------|:---------|
 | `a`    | ✅ Acceptée |
@@ -139,14 +146,5 @@ Q,a->Q
 ---
 
 
-
----
-
-
-
----
-```
-
----
 
 
